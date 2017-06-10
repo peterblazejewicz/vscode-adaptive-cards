@@ -17,31 +17,25 @@
   ],
   "main": "./out/src/extension",
   "contributes": {
-    "commands": [
-      {
-        "command": "adaptivecardviewer.open",
-        "title": "AdaptiveCard Viewer: View Card",
-        "icon": {
-          "light": "./media/preview-darkgray.svg",
-          "dark": "./media/preview-lightgray.svg"
-        }
+    "commands": [{
+      "command": "adaptivecardviewer.open",
+      "title": "AdaptiveCard Viewer: View Card",
+      "icon": {
+        "light": "./media/preview-darkgray.svg",
+        "dark": "./media/preview-lightgray.svg"
       }
-    ],
+    }],
     "menus": {
-      "editor/title": [
-        {
-          "when": "resourceLangId == json",
-          "command": "adaptivecardviewer.open",
-          "group": "navigation"
-        }
-      ]
-    },
-    "keybindings": [
-      {
+      "editor/title": [{
+        "when": "resourceLangId == json",
         "command": "adaptivecardviewer.open",
-        "key": "ctrl+shift+v a"
-      }
-    ],
+        "group": "navigation"
+      }]
+    },
+    "keybindings": [{
+      "command": "adaptivecardviewer.open",
+      "key": "ctrl+shift+v a"
+    }],
     "configuration": {
       "type": "object",
       "title": "Adaptive Card Viewer configuration",
@@ -60,13 +54,13 @@
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
-    "@types/mocha": "2.2.39",
-    "@types/node": "^7.0.5",
-    "typescript": "^2.2.1",
-    "vscode": "^1.0.4"
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.29",
+    "typescript": "^2.3.4",
+    "vscode": "^1.5.0"
   },
   "dependencies": {
-    "microsoft-adaptivecards": "^0.5.4"
+    "microsoft-adaptivecards": "^0.5.6"
   },
   "repository": {
     "type": "git",
@@ -75,8 +69,8 @@
   "license": "MIT",
   "icon": "icon.png",
   "galleryBanner": {
-    "color": "#93E4D5",
-    "theme": "light"
+    "color": "#404040",
+    "theme": "dark"
   },
   "bugs": {
     "url": "https://github.com/Microsoft/AdaptiveCards/issues"
@@ -88,9 +82,5 @@
     "cards",
     "viewer",
     "preview"
-  ],
-  "galleryBanner": {
-    "color":"#404040",
-    "theme":"dark"
-  }
+  ]
 }

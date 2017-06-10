@@ -1,13 +1,16 @@
-#making vsix package
+# making vsix package
+
 1. Install vsce (once)
-```
-npm install -g vsce
-```
 
-2. update package.json with version
+    ```cmd
+    npm install -g vsce
+    ```
 
-3. create package 
-```
-vsce package
-```
+1. update package.json with version
+
+1. create package 
+
+    ```cmd
+    vsce package
+    ```
 
